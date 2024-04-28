@@ -24,3 +24,10 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+
+
+const gallery = document.querySelector('.gallery');
+
+    const correction = images.map(image => `<li><img src="${image.url}" alt="${image.alt}"></li>`).join('');
+    gallery.innerHTML = correction;
